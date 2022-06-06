@@ -1,0 +1,174 @@
+.cart{
+    margin-top: -1px;
+    padding-top: 1px;
+}
+
+.yourCart{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.yourCart .yourCartText{
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-color: #ff4000;
+    color: white;
+    padding: 10px;
+    border-radius: 24px;
+    box-shadow: 3px 3px 4px #757373;
+}
+
+.cartItemBox{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.emptyCart{
+    height: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: gray;
+}
+
+.nonemptyCart{
+    display: none;
+}
+
+.billBox{
+    margin-top: 100px;
+    width: 40%;
+    margin-left: 30%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.29);
+}
+
+.bill{
+    margin-top: 30px;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+}
+
+.bill div{
+    margin-top: 25px;
+}
+
+.subTotal, .shipping, .discount{
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+
+.bill span{
+    width: 40%;
+    text-align: center;
+}
+
+
+.totalAmount{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkOut-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.c-b{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #ff4000;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.c-b:hover{
+    background-color: #f03c00;
+    cursor: pointer;
+}
+
+.totalAmount span{
+    width: 40%;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+.modal{
+    border: 2px solid #ff4000;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 10px rgb(173, 173, 173);
+}
+
+.modal .head{
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #ff4000;
+}
+
+.modal button{
+    all: unset;
+    width: 40%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #ff4000;
+    padding: 8px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+
+/* Responsive Section  */
+
+@media (max-width: 700px) {
+    .emptyCart{
+        height: 70vh;
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+    .billBox{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .modal{
+        width: 90%;
+        height: 30%;
+        margin-left: 5%;
+        margin-top: 65%;
+    }
+
+    .modal .head{
+        font-size: 30px;
+    }
+}
+

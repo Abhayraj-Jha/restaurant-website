@@ -1,0 +1,90 @@
+.miniNav {
+    margin-top: -1px;
+    padding-top: 1px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.miniNav .miniNavBox {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.miniNav .mininavElements {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.242);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    width: 8%;
+    text-align: center;
+    transition: all 0.1s ease;
+}
+
+.miniNav .active {
+    background-color: #ff4000;
+    color: white;
+}
+
+.miniNav .inactive {
+    background-color: white;
+    color: black;
+}
+
+.foodCardBox {
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.miniNav-mobile {
+    display: none;
+}
+
+
+/* Responsive Section  */
+
+@media (max-width: 700px) {
+
+    .miniNav{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .miniNav .miniNavBox{
+        display: none;
+    }
+
+    .miniNav-mobile {
+        display: block;
+        margin-top: 110px;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .miniNav-mobile .foodTypeSelector{
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: 1.5px solid #ff4000;
+        border-radius: 7px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.242);
+        font-size: 16px;
+        letter-spacing: 0.4px;
+    }
+
+
+    .foodCardBox{
+        flex-direction: column;
+    }
+
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import Modal from 'react-modal';
 import './cart.css';
@@ -11,6 +11,10 @@ import CartItem from "./cart-components/CartItem";
 import Footer from "./footer/Footer";
 
 const Cart = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     const [open, setOpen] = useState(false);
 

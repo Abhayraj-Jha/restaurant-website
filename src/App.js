@@ -10,7 +10,7 @@ import Cart from "./components/Cart";
  
 function App() {
 
-  // change from arj 
+
 
   return (
     <>

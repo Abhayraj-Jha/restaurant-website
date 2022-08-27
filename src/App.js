@@ -11,9 +11,7 @@ import Cart from "./components/Cart";
 function App() {
 
 
-  // check 1 
 
- 
 
   return (
     <>

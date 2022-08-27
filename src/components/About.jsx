@@ -31,7 +31,9 @@ const About = () => {
                 </div>
             </div>
             <hr />
+            <hr />
             <br />
+            <hr />
             <Footer />
         </>
     )
